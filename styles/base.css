@@ -1,5 +1,5 @@
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
     margin: 0;
     background-color: #f5f6fa;
     color: #222;
@@ -10,6 +10,13 @@ header {
     color: white;
     text-align: center;
     padding: 1rem 0.5rem;
+}
+
+#course-title {
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.3rem;
 }
 
 header h1 {

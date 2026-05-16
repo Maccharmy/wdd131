@@ -1,0 +1,15 @@
+@media (min-width: 500px) {
+    header {
+        background-color: #000000 !important;
+        color: #ffffff;
+    }
+
+    header h1 {
+        color: #ffffff;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}

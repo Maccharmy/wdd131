@@ -5,22 +5,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Temple Album</title>
+
     <meta name="description"
-        content="A responsive temple album showcasing nine temples worldwide with captions, navigation menu, and dynamic footer.">
+        content="A responsive temple album showcasing temples worldwide with captions, responsive navigation, and dynamic footer.">
+
     <meta name="author" content="Mfon-Obong Usanga">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
+
     <script src="scripts/temples.js" defer></script>
 </head>
 
 <body>
+
     <header>
         <h1>Temple Album</h1>
-        <button class="menu-button" aria-label="Menu"></button>
-        <nav>
+
+        <button class="menu-button" aria-label="Menu" aria-expanded="false"></button>
+
+        <nav aria-label="Main Navigation">
             <a href="#">Home</a>
             <a href="#">Old</a>
             <a href="#">New</a>
@@ -31,48 +40,70 @@
 
     <main>
         <h2>Home</h2>
+
         <figure>
-            <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+            <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" width="400" height="250" loading="lazy">
             <figcaption>Salt Lake</figcaption>
         </figure>
+
         <figure>
-            <img src="images/nairobi-temple.jpg" alt="Nairobi Temple Kenya">
+            <img src="images/nairobi-temple.jpg" alt="Nairobi Temple Kenya" width="400" height="250" loading="lazy">
             <figcaption>Nairobi, Kenya</figcaption>
         </figure>
+
         <figure>
-            <img src="images/accra-ghana-temple.jpg" alt="Accra Ghana Temple">
+            <img src="images/accra-ghana-temple.jpg" alt="Accra Ghana Temple" width="400" height="250" loading="lazy">
             <figcaption>Accra, Ghana</figcaption>
         </figure>
+
         <figure>
-            <img src="images/lagos-nigeria-temple.jpg" alt="Lagos Nigeria Temple">
+            <img src="images/lagos-nigeria-temple.jpg" alt="Lagos Nigeria Temple" width="400" height="250"
+                loading="lazy">
             <figcaption>Lagos, Nigeria</figcaption>
         </figure>
+
         <figure>
-            <img src="images/rome-italy-temple.jpg" alt="Rome Italy Temple">
+            <img src="images/rome-italy-temple.jpg" alt="Rome Italy Temple" width="400" height="250" loading="lazy">
             <figcaption>Rome, Italy</figcaption>
         </figure>
+
         <figure>
-            <img src="images/manila-philippines-temple.jpg" alt="Manila Philippines Temple">
+            <img src="images/manila-philippines-temple.jpg" alt="Manila Philippines Temple" width="400" height="250"
+                loading="lazy">
             <figcaption>Manila, Philippines</figcaption>
         </figure>
+
         <figure>
-            <img src="images/paris-france-temple.jpg" alt="Paris France Temple">
+            <img src="images/paris-france-temple.jpg" alt="Paris France Temple" width="400" height="250" loading="lazy">
             <figcaption>Paris, France</figcaption>
         </figure>
+
         <figure>
-            <img src="images/hong-kong-china-temple.jpg" alt="Hong Kong China Temple">
+            <img src="images/hong-kong-china-temple.jpg" alt="Hong Kong China Temple" width="400" height="250"
+                loading="lazy">
             <figcaption>Hong Kong, China</figcaption>
         </figure>
+
         <figure>
-            <img src="images/sao-paulo-brazil-temple.jpg" alt="Sao Paulo Brazil Temple">
+            <img src="images/sao-paulo-brazil-temple.jpg" alt="Sao Paulo Brazil Temple" width="400" height="250"
+                loading="lazy">
             <figcaption>Sao Paulo, Brazil</figcaption>
         </figure>
+
     </main>
 
     <footer>
-        <p>©2026 🌴 <strong>Mfon-Obong Usanga</strong> 🌴 Nigeria</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+        <p>
+            ©<span id="year"></span>
+            🌴 <strong>Mfon-Obong Usanga</strong> 🌴 Nigeria
+        </p>
+
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
     </footer>
+
 </body>
 
 </html>

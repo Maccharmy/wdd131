@@ -1,0 +1,97 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 1rem;
+}
+
+.menu-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-button::after {
+    content: "☰";
+}
+
+.menu-button.open::after {
+    content: "✖";
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+}
+
+nav a:hover {
+    background-color: #4b0082;
+    border-radius: 4px;
+}
+
+main {
+    max-width: 900px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #6a0dad;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    transition: all 0.3s ease;
+}
+
+footer strong {
+    font-weight: 700;
+    font-style: italic;
+    color: #ffdd00;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer:hover {
+    text-shadow: 0 0 8px #ffffff;
+    cursor: pointer;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mfon-Obong Usanga" />
+    <meta name="description" content="WDD 131 Design Principles activity" />
+    <title>Design Principles</title>
+    <link rel="stylesheet" href="styles/design.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Design Principles</h1>
+    </header>
+
+    <div class="banner">
+        <p>Applying design principles for clean and accessible web layouts</p>
+    </div>
+
+    <div class="callout">
+        <h2>Important Announcement</h2>
+        <p>
+            Always check your color contrast ratios! Visual accessibility is essential to ensure
+            all users can read your content comfortably. Make sure your color combinations pass
+            standard accessibility guidelines (AA or AAA contrast levels).
+        </p>
+    </div>
+
+    <main>
+        <h2>Design Concepts and Checklist</h2>
+        <article>
+            <h3>Good Design Balances</h3>
+            <p>
+                An effective design balances color, spacing, and typography. Grids bring structure;
+                spacing brings rhythm. Consistency in fonts and alignment creates visual harmony.
+            </p>
+        </article>
+        <aside>
+            <h3>Design Checklist</h3>
+            <ul>
+                <li>High color contrast</li>
+                <li>Clear visual hierarchy</li>
+                <li>Consistent spacing</li>
+                <li>Readable typography</li>
+                <li>Responsive layout</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Mfon-Obong Usanga</p>
+    </footer>
+
+    <script>
+        document.querySelector('#year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

@@ -29,6 +29,8 @@ main {
     display: grid;
     gap: 2rem;
     padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .data,

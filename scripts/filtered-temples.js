@@ -71,6 +71,7 @@ const temples = [
     }
 ];
 
+// Function to render temple cards
 function renderTemples(list) {
     const container = document.getElementById("temple-cards");
     container.innerHTML = "";
@@ -88,26 +89,32 @@ function renderTemples(list) {
     });
 }
 
+// Initial render
 renderTemples(temples);
 
-document.querySelector("nav").addEventListener("click", e => {
-    e.preventDefault();
-    const filter = e.target.textContent;
-    let filtered = temples;
+// Attach event listeners to each nav link
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", e => {
+        e.preventDefault();
+        const filter = e.target.textContent.trim();
+        let filtered = temples;
 
-    if (filter === "Old") {
-        filtered = temples.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900);
-    } else if (filter === "New") {
-        filtered = temples.filter(t => parseInt(t.dedicated.split(",")[0]) > 2000);
-    } else if (filter === "Large") {
-        filtered = temples.filter(t => t.area > 90000);
-    } else if (filter === "Small") {
-        filtered = temples.filter(t => t.area < 10000);
-    } else if (filter === "Home") {
-        filtered = temples;
-    }
+        if (filter === "Old") {
+            filtered = temples.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900);
+        } else if (filter === "New") {
+            filtered = temples.filter(t => parseInt(t.dedicated.split(",")[0]) > 2000);
+        } else if (filter === "Large") {
+            filtered = temples.filter(t => t.area > 90000);
+        } else if (filter === "Small") {
+            filtered = temples.filter(t => t.area < 10000);
+        } else if (filter === "Home") {
+            filtered = temples;
+        }
 
-    renderTemples(filtered);
+        // Update heading and render
+        document.querySelector("main h2").textContent = filter;
+        renderTemples(filtered);
+    });
 });
 
 // Footer updates

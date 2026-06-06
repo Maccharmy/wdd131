@@ -23,6 +23,14 @@ section {
     border-bottom: 1px solid #ccc;
 }
 
+.primary-color {
+    color: #2E86C1;
+}
+
+.secondary-color {
+    color: #28B463;
+}
+
 img {
     display: block;
     margin: 10px auto;

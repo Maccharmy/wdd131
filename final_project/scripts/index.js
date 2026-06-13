@@ -2,7 +2,7 @@
 const drugInfo = {
     name: "Amoxicillin",
     dosage: "500 mg",
-    frequency: "3 times daily"
+    frequency: "8 hourly daily"
 };
 
 // Array
